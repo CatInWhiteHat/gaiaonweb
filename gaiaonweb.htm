@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+	.hidden {
+        display: none;
+   .input {
+        width: 40%;
+        padding: 10px 25px;
+        font-size: 40px;
+        text-align: center;
+        left: 50px;
+
+      }
+      }
+</style>
+<h1></h1>
+<input id="myInput" value="" class="input">
+<button id="enter" class="hidden" onclick="whenEnter()">Button</button>
+<p id="txt" class="hidden" class="b" style="font-size:160%;  font-family: Arial, sans-serif;">lol what are you doing here?<br><br>Sucess! I guess..?<br>You solved my really weird arg, congratulations is yours!<br>I must say, I am extremely impressed you got here, and hey- if you had my phone number, I must know you irl so...<br> Solving this thing has gotta be wroth for something, right? Probably. I owe you ramen! Free bowl on me.<br>Or if you don't like ramen, a hamburger or pizza or something; idk, your call.<br> Either way, just text me the password "Anemone" and glory is yours!<br> You shall forever be known as the brilliant puzzle master. </p>
+<script>
+ var input = document.getElementById("myInput");
+            input.addEventListener("keypress", function(event) {
+              if (event.key === "Enter") {
+                event.preventDefault();
+                document.getElementById("enter").click();
+              }
+            });
+function whenEnter() {
+              console.log(input.value);
+            																											  if (input.value == "think but this, and all is mended" || input.value == "think but this and all is mended" || input.value == "think but this and all is mended," || input.value == "think but this, and all is mended,"){
+		 document.getElementById("txt").classList.remove("hidden");
+		 document.getElementById("myInput").classList.add("hidden");
+		
+              } else {
+                 alert("no sir");
+              }
+            }
+</script>
+</body>
+</html>
+<!-- if we shadows have offended -->
+
